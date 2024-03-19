@@ -11,7 +11,7 @@ yarn
 ### Start express node server:
 
 ```
-node external-api-server/start
+node external-api-server/start.ts
 ```
 
 ### Then you can run:
