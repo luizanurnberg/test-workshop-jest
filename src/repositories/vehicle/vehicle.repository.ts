@@ -19,6 +19,7 @@ class VehicleRepository implements VehicleRepositoryInterface {
     this.state = VEHICLES_DATA;
   }
 
+
   async _validateVehicle(entity: Vehicle) {
     const hasVehicleWithSameId = this.state.find(
       (vehicle) => vehicle.id == entity.id
@@ -84,6 +85,12 @@ class VehicleRepository implements VehicleRepositoryInterface {
 
     return this.state.find((vehicle) => vehicle.id == entity.id) || null;
   }
+
+  async validateLicensePlate(plate: string) {
+    const regex = /^[0-9]{3}[a-zA-Z]{4}$/;
+    return Promise.resolve(regex.test(plate));
+  }
+
 }
 
 export default VehicleRepository;
