@@ -8,7 +8,6 @@ describe("validateVehicleColor", () => {
       const isColorValid = validateVehicleColor(
         correctColorVehicle.color
       );
-
       expect(isColorValid).toBe(true);
     });
   });
@@ -18,7 +17,6 @@ describe("validateVehicleColor", () => {
       const isColorValid = validateVehicleColor(
         wrongColorVehicle.color
       );
-
       expect(isColorValid).toBe(false);
     });
   });

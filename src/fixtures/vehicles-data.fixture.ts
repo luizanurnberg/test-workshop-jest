@@ -8,7 +8,9 @@ const VEHICLES_DATA: Vehicle[] = [
     color: "blue",
     chassis: "di139s9a83j2fds",
     license_plate: "EST1234",
-    weight: 1231,
+    weight: 1500,
+    type: "car",
+    numberOfDoors: 4
   },
 
   {
@@ -18,7 +20,9 @@ const VEHICLES_DATA: Vehicle[] = [
     color: "red",
     chassis: "di139s9a83j2fds",
     license_plate: "EST1235",
-    weight: 1231,
+    weight: 9000,
+    type: "truck",
+    numberOfDoors: 2
   },
 
   {
@@ -28,7 +32,9 @@ const VEHICLES_DATA: Vehicle[] = [
     color: "green",
     chassis: "di139s9a83j2fds",
     license_plate: "EST123B",
-    weight: 1231,
+    weight: 11,
+    type: "bicycle",
+    numberOfDoors: 0
   },
 ];
 

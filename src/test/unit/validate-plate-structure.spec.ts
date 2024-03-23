@@ -8,7 +8,6 @@ describe("validatePlateStructureUsecase", () => {
       const isPlateValid = validatePlateStructureUsecase(
         correctPlateVehicle.license_plate
       );
-
       expect(isPlateValid).toBe(true);
     });
   });
@@ -18,7 +17,6 @@ describe("validatePlateStructureUsecase", () => {
       const isPlateValid = validatePlateStructureUsecase(
         wrongPlateVehicle.license_plate
       );
-
       expect(isPlateValid).toBe(false);
     });
   });

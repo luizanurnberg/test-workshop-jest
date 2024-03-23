@@ -1,8 +1,8 @@
-function validateVehicleColor(vehicleColor: string): boolean {
+function validateVehicleColorUseCase(vehicleColor: string): boolean {
     if (vehicleColor !== "pink") return false;
   
     return true;
   }
   
-  export default validateVehicleColor;
+  export default validateVehicleColorUseCase;
   
