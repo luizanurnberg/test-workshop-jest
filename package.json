@@ -4,7 +4,9 @@
   "main": "index.ts",
   "license": "MIT",
   "scripts": {
-    "test": "jest --no-cache --verbose"
+    "test": "jest --no-cache --verbose",
+    "start-server": "ts-node ./external-api-server/start.ts",
+    "test-coverage": "jest --collect-coverage"
   },
   "devDependencies": {
     "@types/crypto-js": "^4.1.1",
@@ -17,6 +19,7 @@
     "axios": "^0.27.2",
     "crypto-js": "^4.1.1",
     "dotenv": "^16.0.0",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "ts-node": "^10.9.2"
   }
 }
